@@ -7,11 +7,10 @@ authors:
     given-names: "Hai Long"
 repository-code: "https://github.com/lhlizdabezt/DEEPDSP-Automatic-Modulation-Classification"
 url: "https://youtu.be/yl5Sk6plWXg"
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-08-24
 keywords:
   - automatic modulation classification
   - digital signal processing
   - deep learning
   - wireless communications
-

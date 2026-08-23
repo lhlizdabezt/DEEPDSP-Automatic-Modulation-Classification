@@ -1,8 +1,8 @@
 {
   "status": "PASS",
   "inventory": {
-    "files": 65,
-    "bytes": 26564550
+    "files": 66,
+    "bytes": 26566625
   },
   "notebook": {
     "cells": 33,
@@ -104,11 +104,13 @@
         1278
       ]
     },
-    "banner_ascii": true
+    "banner_ascii": true,
+    "banner_labels_centered": 3,
+    "banner_minimum_horizontal_padding": 16.0
   },
   "source_and_docs": {
     "live_inference": true,
-    "public_documents": 9,
+    "public_documents": 10,
     "replacement_characters": 0
   }
 }

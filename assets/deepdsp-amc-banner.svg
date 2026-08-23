@@ -11,14 +11,13 @@
   <rect x="785" y="61" width="345" height="48" rx="12" fill="#0e3449">
     <animate attributeName="fill" values="#0e3449;#13546a;#0e3449" dur="4s" repeatCount="indefinite"/>
   </rect>
-  <text x="813" y="92" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DSP FEATURES AND RANDOM FOREST</text>
+  <text x="957.5" y="92" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">DSP FEATURES AND RANDOM FOREST</text>
   <rect x="785" y="121" width="345" height="48" rx="12" fill="#12365c">
     <animate attributeName="fill" values="#12365c;#1b5b86;#12365c" dur="4s" begin="1s" repeatCount="indefinite"/>
   </rect>
-  <text x="813" y="152" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">COMPACT ONE DIMENSIONAL CNN</text>
+  <text x="957.5" y="152" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">COMPACT ONE DIMENSIONAL CNN</text>
   <rect x="785" y="181" width="345" height="48" rx="12" fill="#15453f">
     <animate attributeName="fill" values="#15453f;#1b725f;#15453f" dur="4s" begin="2s" repeatCount="indefinite"/>
   </rect>
-  <text x="813" y="212" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WEIGHTED PROBABILITY FUSION</text>
+  <text x="957.5" y="212" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">WEIGHTED PROBABILITY FUSION</text>
 </svg>
-

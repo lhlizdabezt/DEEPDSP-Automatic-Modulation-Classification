@@ -147,7 +147,41 @@ def check_images_and_svg() -> dict[str, object]:
     forbidden_tags = {"path", "line", "polyline"}
     found = {element.tag.rsplit("}", 1)[-1] for element in tree.iter()}
     require(not (found & forbidden_tags), f"Banner contains forbidden line geometry: {found & forbidden_tags}")
-    return {"report_figures": len(report_figures), "checked_images": len(images), "dimensions": dimensions, "banner_ascii": True}
+
+    card_left = 785.0
+    card_width = 345.0
+    card_center = card_left + card_width / 2
+    minimum_padding = 16.0
+    banner_labels = {
+        "DSP FEATURES AND RANDOM FOREST",
+        "COMPACT ONE DIMENSIONAL CNN",
+        "WEIGHTED PROBABILITY FUSION",
+    }
+    text_nodes = {
+        "".join(element.itertext()).strip(): element
+        for element in tree.iter()
+        if element.tag.rsplit("}", 1)[-1] == "text"
+    }
+    for label in banner_labels:
+        node = text_nodes.get(label)
+        require(node is not None, f"Banner label is missing: {label}")
+        font_size = float(node.attrib.get("font-size", "0"))
+        estimated_width = len(label) * font_size * 0.64
+        require(node.attrib.get("text-anchor") == "middle", f"Banner label is not centered: {label}")
+        require(abs(float(node.attrib.get("x", "0")) - card_center) < 0.01, f"Banner label has the wrong center: {label}")
+        require(
+            estimated_width <= card_width - 2 * minimum_padding,
+            f"Banner label may overflow its card: {label} ({estimated_width:.1f}px estimated)",
+        )
+
+    return {
+        "report_figures": len(report_figures),
+        "checked_images": len(images),
+        "dimensions": dimensions,
+        "banner_ascii": True,
+        "banner_labels_centered": len(banner_labels),
+        "banner_minimum_horizontal_padding": minimum_padding,
+    }
 
 
 def check_source_and_docs() -> dict[str, object]:
