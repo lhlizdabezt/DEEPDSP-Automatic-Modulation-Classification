@@ -1,0 +1,11 @@
+DEEPDSP-AMC demonstration video
+
+Student: Luong Hai Long
+Student ID: 22207056
+Class: 24DTV_DKD2
+Instructor: Huynh Quoc Thinh, M.Sc.
+
+YouTube: https://youtu.be/yl5Sk6plWXg
+
+Title: DEEPDSP-AMC | Automatic Modulation Classification with DSP, Random Forest, and a 1D CNN
+

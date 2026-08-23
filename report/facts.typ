@@ -1,0 +1,23 @@
+#let facts = (
+  total-frames: "6.600",
+  frame-len: "256",
+  train-size: "4.488",
+  val-size: "792",
+  test-size: "1.320",
+  rf-accuracy: "58,48%",
+  rf-f1: "0,5817",
+  cnn-accuracy: "71,82%",
+  cnn-f1: "0,7201",
+  hybrid-accuracy: "73,48%",
+  hybrid-f1: "0,7340",
+  hybrid-alpha: "0,55",
+  hybrid-snr90: "9 dB",
+  cnn-params: "81.030",
+  cnn-epochs: "19",
+  cnn-train-time: "34,98 s",
+  rf-train-time: "0,76 s",
+  cnn-latency: "0,0626 ms/khung",
+  rf-latency: "0,1963 ms/khung",
+  figures: "15",
+)
+

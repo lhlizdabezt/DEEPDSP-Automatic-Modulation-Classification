@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "inventory": {
+    "files": 65,
+    "bytes": 26564550
+  },
+  "notebook": {
+    "cells": 33,
+    "code_cells": 22,
+    "executed": 22,
+    "errors": 0,
+    "png_outputs": 13
+  },
+  "metrics": {
+    "rf_accuracy": 0.5848484848484848,
+    "rf_macro_f1": 0.5816903901546325,
+    "cnn_accuracy": 0.7181818181818181,
+    "cnn_macro_f1": 0.7200705426860555,
+    "hybrid_accuracy": 0.7348484848484849,
+    "hybrid_macro_f1": 0.7339569603511245,
+    "alpha": 0.55,
+    "test_rows": 1320
+  },
+  "report": {
+    "pages": 44,
+    "empty_pages": [],
+    "page_size": "A4",
+    "text_characters": 55482
+  },
+  "visuals": {
+    "report_figures": 15,
+    "checked_images": 18,
+    "dimensions": {
+      "assets\\figures\\01_iq_time_gallery.png": [
+        2665,
+        1851
+      ],
+      "assets\\figures\\02_constellation_gallery.png": [
+        2660,
+        1697
+      ],
+      "assets\\figures\\03_psd_gallery.png": [
+        2665,
+        1653
+      ],
+      "assets\\figures\\04_dataset_balance.png": [
+        2550,
+        1015
+      ],
+      "assets\\figures\\05_feature_pca.png": [
+        1851,
+        1367
+      ],
+      "assets\\figures\\06_training_curves.png": [
+        2445,
+        949
+      ],
+      "assets\\figures\\07_confusion_rf.png": [
+        1628,
+        1367
+      ],
+      "assets\\figures\\08_confusion_cnn.png": [
+        1628,
+        1367
+      ],
+      "assets\\figures\\09_confusion_hybrid.png": [
+        1628,
+        1367
+      ],
+      "assets\\figures\\10_accuracy_vs_snr.png": [
+        2049,
+        1169
+      ],
+      "assets\\figures\\11_f1_by_class.png": [
+        2335,
+        1125
+      ],
+      "assets\\figures\\12_feature_importance.png": [
+        2005,
+        1411
+      ],
+      "assets\\figures\\13_demo_prediction.png": [
+        2929,
+        949
+      ],
+      "assets\\figures\\14_demo_app.png": [
+        1600,
+        1400
+      ],
+      "assets\\figures\\15_video_demo_qr.png": [
+        656,
+        656
+      ],
+      "assets\\readme\\accuracy_by_snr.png": [
+        1944,
+        1116
+      ],
+      "assets\\readme\\demo_app_english.png": [
+        1600,
+        1068
+      ],
+      "assets\\readme\\hybrid_confusion_matrix.png": [
+        1494,
+        1278
+      ]
+    },
+    "banner_ascii": true
+  },
+  "source_and_docs": {
+    "live_inference": true,
+    "public_documents": 9,
+    "replacement_characters": 0
+  }
+}

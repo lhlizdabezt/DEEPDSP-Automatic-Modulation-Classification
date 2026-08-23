@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.playwright-cli/
+output/
+tmp/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local training products; the public app uses compressed release models.
+artifacts/
+*.joblib.tmp
+

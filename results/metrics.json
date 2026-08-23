@@ -1,0 +1,91 @@
+{
+  "project": "DEEPDSP-AMC",
+  "student": {
+    "name": "Lương Hải Long",
+    "id": "22207056"
+  },
+  "course": "Thực hành Xử lý tín hiệu số - 24DTV_DKD2",
+  "instructor": "ThS. Huỳnh Quốc Thịnh",
+  "seed": 22207056,
+  "config": {
+    "classes": [
+      "BPSK",
+      "QPSK",
+      "8PSK",
+      "16QAM",
+      "2FSK",
+      "4FSK"
+    ],
+    "snr_db": [
+      -12,
+      -9,
+      -6,
+      -3,
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18
+    ],
+    "frames_per_class_snr": 100,
+    "frame_len": 256,
+    "samples_per_symbol": 8,
+    "rrc_rolloff": 0.35,
+    "rrc_span_symbols": 8,
+    "test_fraction": 0.2,
+    "val_fraction_of_train": 0.15,
+    "batch_size": 256,
+    "max_epochs": 22,
+    "patience": 5,
+    "learning_rate": 0.0015
+  },
+  "split_sizes": {
+    "train": 4488,
+    "validation": 792,
+    "test": 1320
+  },
+  "rf": {
+    "accuracy": 0.5848484848484848,
+    "macro_f1": 0.5816903901546325,
+    "train_seconds": 0.7601826000000074,
+    "latency_ms_per_frame_excluding_features": 0.19629609375000356
+  },
+  "cnn": {
+    "accuracy": 0.7181818181818181,
+    "macro_f1": 0.7200705426860555,
+    "train_seconds": 34.97975580000002,
+    "latency_ms_per_frame": 0.06259009114583473,
+    "parameter_count": 81030,
+    "epochs_ran": 19
+  },
+  "hybrid": {
+    "alpha_cnn_selected_on_validation": 0.55,
+    "accuracy": 0.7348484848484849,
+    "macro_f1": 0.7339569603511245,
+    "accuracy_by_snr": {
+      "-12": 0.2833333333333333,
+      "-9": 0.4083333333333333,
+      "-6": 0.525,
+      "-3": 0.7166666666666667,
+      "0": 0.75,
+      "3": 0.8416666666666667,
+      "6": 0.8666666666666667,
+      "9": 0.9,
+      "12": 0.925,
+      "15": 0.9333333333333333,
+      "18": 0.9333333333333333
+    },
+    "snr_for_90pct_accuracy_db": 9
+  },
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0",
+    "torch": "2.11.0+cpu",
+    "device": "cpu"
+  }
+}
